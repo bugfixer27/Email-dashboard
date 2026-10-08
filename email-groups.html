@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>
+html{color-scheme:light}
+@media (prefers-color-scheme: dark){html{color-scheme:dark}}
+body{margin:0;-webkit-text-size-adjust:100%}
+[hidden]{display:none!important}
+</style>
+<title>Falcons Email Groups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: filter board on the left (team / period / event rows), sticky recipient panel on the right; stacks with a sticky action bar on phones */
+:root{
+  --bg:#f7f4f4; --surface:#ffffff; --ink:#24171a; --muted:#6f5f63; --line:#e4dadc;
+  --maroon:#801d32; --maroon-soft:#f4e4e8; --on-maroon:#ffffff; --gold:#b8862b;
+  --chip:#ffffff; --chip-ink:#3a2a2e; --off:#b9aaae;
+  --display:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#171113; --surface:#211a1c; --ink:#f1e8ea; --muted:#ab9a9f; --line:#3a2e31;
+  --maroon:#d0566f; --maroon-soft:#3b1f26; --on-maroon:#1a0f12; --gold:#d9a94f;
+  --chip:#2a2124; --chip-ink:#eadfe2; --off:#6b5a5f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171113; --surface:#211a1c; --ink:#f1e8ea; --muted:#ab9a9f; --line:#3a2e31;
+  --maroon:#d0566f; --maroon-soft:#3b1f26; --on-maroon:#1a0f12; --gold:#d9a94f;
+  --chip:#2a2124; --chip-ink:#eadfe2; --off:#6b5a5f; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:20px 120px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 24px;padding-bottom:14px;border-bottom:2px solid var(--maroon);margin-bottom:18px}
+h1{font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:.01em;margin:0;line-height:1.05;text-wrap:balance}
+h1 span{color:var(--maroon)}
+.src{font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:24px;align-items:start}
+@media (max-width:860px){.grid{grid-template-columns:minmax(0,1fr)}}
+section.group{margin-bottom:22px}
+.glabel{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px}
+.glabel h2{font-family:var(--display);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
+.glabel small{font-size:12px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips.events{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+button.chip{font:inherit;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 12px;border:1px solid var(--line);background:var(--chip);color:var(--chip-ink);border-radius:8px;cursor:pointer;text-align:left;min-height:40px;transition:background .12s,border-color .12s}
+button.chip:hover{border-color:var(--maroon)}
+button.chip:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+button.chip .n{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+button.chip[aria-pressed="true"]{background:var(--maroon);border-color:var(--maroon);color:var(--on-maroon)}
+button.chip[aria-pressed="true"] .n{color:var(--on-maroon);opacity:.85}
+button.chip.big{font-family:var(--display);font-weight:600;font-size:17px;padding:10px 16px}
+button.chip.zero{opacity:.45}
+.hint{font-size:13px;color:var(--muted);margin:-4px 0 18px}
+.hint b{color:var(--ink);font-weight:600}
+aside.panel{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:14px}
+.count{font-family:var(--display);font-weight:700;font-size:40px;line-height:1;color:var(--maroon);font-variant-numeric:tabular-nums}
+.count small{font-family:var(--body);font-weight:500;font-size:14px;color:var(--muted);margin-left:6px}
+.summary{font-size:14px;color:var(--muted);min-height:1.4em}
+.opts{display:flex;flex-direction:column;gap:8px;font-size:14px}
+.opts label{display:flex;gap:8px;align-items:flex-start;cursor:pointer}
+.opts input{margin-top:3px;accent-color:var(--maroon)}
+.field{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
+.field input{font:inherit;font-size:14px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:7px 9px;width:100%}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+a.go,button.sec{font:inherit;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;border-radius:8px;text-decoration:none;cursor:pointer;min-height:42px}
+a.go{flex:1 1 auto;background:var(--maroon);color:var(--on-maroon);border:1px solid var(--maroon)}
+a.go[aria-disabled="true"]{opacity:.4;pointer-events:none}
+button.sec{background:transparent;color:var(--ink);border:1px solid var(--line)}
+button.sec:hover{border-color:var(--maroon)}
+.people{list-style:none;margin:0;padding:0;max-height:46vh;overflow:auto;border-top:1px solid var(--line)}
+.people li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:7px 2px;border-bottom:1px solid var(--line)}
+.people .t{font-family:var(--display);font-weight:700;font-size:12px;width:22px;height:22px;border-radius:5px;display:grid;place-items:center;background:var(--maroon-soft);color:var(--maroon)}
+.people .nm{min-width:0}
+.people .nm div{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.people .nm code{font-family:var(--mono);font-size:11.5px;color:var(--muted);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.people button{font:inherit;font-size:12px;background:none;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:3px 8px;cursor:pointer}
+.people li.off .nm{opacity:.45;text-decoration:line-through}
+.people li.cc .t{background:transparent;border:1px dashed var(--off);color:var(--muted);font-size:10px}
+.empty{font-size:14px;color:var(--muted);padding:12px 0}
+.toast{font-size:13px;color:var(--maroon);min-height:1.2em}
+textarea.fallback{width:100%;font-family:var(--mono);font-size:12px;min-height:70px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:6px}
+@media (max-width:860px){
+  aside.panel{position:static}
+  .bar{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:10px;align-items:center;z-index:5}
+  .bar .bc{font-family:var(--display);font-weight:700;font-size:22px;color:var(--maroon);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .bar a.go{flex:1}
+}
+@media (min-width:861px){.bar{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Falcons <span>Email Groups</span></h1>
+    <div class="src" id="src"></div>
+  </header>
+
+  <div class="grid">
+    <main>
+      <p class="hint">Pick any mix. Within a row, picks <b>add</b> people (Chem Lab + Codebusters = both groups). Across rows, picks <b>narrow</b> (Chem Lab + Team A = Team A's Chem Lab pair).</p>
+
+      <section class="group">
+        <div class="glabel"><h2>Team</h2><button class="chip" id="everyone" type="button" style="min-height:30px;padding:4px 10px;font-size:13px">Everyone</button></div>
+        <div class="chips" id="teams"></div>
+      </section>
+
+      <section class="group">
+        <div class="glabel"><h2>Period</h2><small>From the Team Fit form</small></div>
+        <div class="chips" id="periods"></div>
+      </section>
+
+      <section class="group">
+        <div class="glabel"><h2>Event</h2><small id="evnote">Count = people matching your other picks</small></div>
+        <div class="chips events" id="events"></div>
+      </section>
+    </main>
+
+    <aside class="panel" aria-label="Recipients">
+      <div>
+        <div class="count" id="count">0<small>recipients</small></div>
+        <div class="summary" id="summary">Nothing selected yet</div>
+      </div>
+      <div class="opts">
+        <label><input type="checkbox" id="ccLeaders"> <span>CC Luke, Rohan and Ms. Monti</span></label>
+        <label><input type="checkbox" id="includeMe"> <span>Include the sending account in To</span></label>
+      </div>
+      <div class="field"><label for="subject">Subject (optional)</label><input id="subject" type="text" placeholder="[Sci Oly] …"></div>
+      <div class="field"><label for="acct">Open in this Gmail account</label><input id="acct" type="email" autocomplete="email"></div>
+      <div class="actions">
+        <a class="go" id="go" href="#" target="_blank" rel="noopener" aria-disabled="true">Open in Gmail</a>
+        <button class="sec" id="copy" type="button">Copy addresses</button>
+      </div>
+      <div class="toast" id="toast" role="status"></div>
+      <textarea class="fallback" id="fallback" hidden readonly aria-label="Addresses to copy"></textarea>
+      <ul class="people" id="people"></ul>
+    </aside>
+  </div>
+</div>
+
+<div class="bar"><span class="bc" id="barCount">0</span><a class="go" id="barGo" href="#" target="_blank" rel="noopener" aria-disabled="true">Open in Gmail</a></div>
+
+<script>
+const DATA = {"events":["Anatomy & Physiology","Astronomy","Boomilever","Botany","Chemistry Lab","Circuit Lab","Codebusters","Designer Genes","Disease Detectives","Dynamic Planet","Electric Vehicle","Engineering CAD","Experimental Design","Forensics","Hovercraft","Mission Possible","Ping-Pong Parachute","Protein Modeling","Remote Sensing","Rocks and Minerals","Thermodynamics","Water Quality","Wright Stuff","Code Craze"],"members":[{"name":"Florian Kroker-McCormack","email":"fkrokermccormack27@riverdale.edu","grade":12,"mini":true,"periods":"AB","team":"A","events":["Chemistry Lab","Dynamic Planet","Experimental Design","Remote Sensing"]},{"name":"Sydney Kroker-McCormack","email":"skrokermccormack29@riverdale.edu","grade":10,"mini":false,"periods":"B","team":"B","events":["Anatomy & Physiology","Disease Detectives"]},{"name":"Luke Orlowski","email":"lorlowski27@riverdale.edu","grade":12,"mini":true,"periods":"AB","team":"A","events":["Boomilever","Disease Detectives","Experimental Design","Wright Stuff"]},{"name":"Beatrix Simon","email":"bsimon28@riverdale.edu","grade":11,"mini":false,"periods":"A","team":"A","events":["Botany","Forensics","Rocks and Minerals"]},{"name":"Cole Simmons","email":"ccsimmons28@riverdale.edu","grade":11,"mini":true,"periods":"A","team":"A","events":["Botany","Circuit Lab","Codebusters","Electric Vehicle"]},{"name":"Avery Tolliver-Mapp","email":"atollivermapp29@riverdale.edu","grade":10,"mini":true,"periods":"","team":"A","events":["Circuit Lab","Electric Vehicle","Remote Sensing"]},{"name":"Austin Kretschman","email":"akretschman27@riverdale.edu","grade":12,"mini":false,"periods":"B","team":"A","events":["Hovercraft","Ping-Pong Parachute"]},{"name":"Sylviana Zhang","email":"szhang29@riverdale.edu","grade":10,"mini":false,"periods":"AB","team":"A","events":["Anatomy & Physiology","Mission Possible","Protein Modeling"]},{"name":"Jed Werber","email":"jwerber28@riverdale.edu","grade":11,"mini":true,"periods":"B","team":"B","events":["Boomilever","Electric Vehicle","Hovercraft","Ping-Pong Parachute"]},{"name":"Robert Mui","email":"rmui29@riverdale.edu","grade":10,"mini":true,"periods":"","team":"B","events":["Codebusters","Forensics","Protein Modeling"]},{"name":"Zerun Shu","email":"zshu29@riverdale.edu","grade":10,"mini":true,"periods":"","team":"B","events":["Codebusters","Forensics"]},{"name":"William Zhao","email":"wzhao28@riverdale.edu","grade":11,"mini":true,"periods":"A","team":"A","events":["Designer Genes","Engineering CAD","Water Quality"]},{"name":"Diana Khodorkovskaya","email":"dkhodorkovskaya28@riverdale.edu","grade":11,"mini":true,"periods":"AB","team":"A","events":["Anatomy & Physiology","Designer Genes","Protein Modeling"]},{"name":"Josephine Swinburne","email":"jswinburne29@riverdale.edu","grade":10,"mini":true,"periods":"A","team":"B","events":["Engineering CAD","Experimental Design","Water Quality"]},{"name":"Chloe Garbutt","email":"cgarbutt29@riverdale.edu","grade":10,"mini":true,"periods":"B","team":"B","events":["Chemistry Lab","Engineering CAD","Experimental Design"]},{"name":"Anna Reich","email":"areich29@riverdale.edu","grade":10,"mini":true,"periods":"B","team":"B","events":["Botany","Chemistry Lab","Disease Detectives"]},{"name":"Madeline Oppold","email":"moppold29@riverdale.edu","grade":10,"mini":false,"periods":"B","team":"B","events":["Designer Genes","Electric Vehicle","Wright Stuff"]},{"name":"Elena Popel","email":"epopel29@riverdale.edu","grade":10,"mini":false,"periods":"AB","team":"A","events":["Forensics","Rocks and Minerals","Thermodynamics"]},{"name":"Theo Schwider","email":"tschwider27@riverdale.edu","grade":12,"mini":false,"periods":"AB","team":"A","events":["Astronomy","Chemistry Lab","Dynamic Planet","Code Craze"]},{"name":"Arjun Kothari","email":"akothari27@riverdale.edu","grade":12,"mini":false,"periods":"","team":"C","events":["Experimental Design"]},{"name":"Alexander Diefenbach","email":"adiefenbach27@riverdale.edu","grade":12,"mini":false,"periods":"A","team":"C","events":["Botany","Codebusters","Forensics"]},{"name":"Gavin Leis","email":"gleis27@riverdale.edu","grade":12,"mini":false,"periods":"B","team":"A","events":["Boomilever","Hovercraft","Ping-Pong Parachute"]},{"name":"Jonathan Milo","email":"jmilo27@riverdale.edu","grade":12,"mini":false,"periods":"","team":"C","events":["Designer Genes"]},{"name":"Rohan Varia","email":"rvaria27@riverdale.edu","grade":12,"mini":true,"periods":"A","team":"A","events":["Codebusters","Water Quality","Wright Stuff"]},{"name":"Silas Cabinte","email":"scabinte27@riverdale.edu","grade":12,"mini":false,"periods":"AB","team":"A","events":["Disease Detectives","Engineering CAD","Experimental Design"]},{"name":"Yael Larish","email":"ylarish30@riverdale.edu","grade":9,"mini":false,"periods":"AB","team":"C","events":["Anatomy & Physiology","Designer Genes","Disease Detectives"]},{"name":"Sidarah Gray","email":"sgray30@riverdale.edu","grade":9,"mini":false,"periods":"A","team":"C","events":["Anatomy & Physiology","Botany","Disease Detectives"]},{"name":"Margot Godiwala","email":"mgodiwala29@riverdale.edu","grade":10,"mini":false,"periods":"AB","team":"A","events":["Astronomy","Codebusters","Mission Possible","Thermodynamics"]},{"name":"Zubin Kapadia","email":"zkapadia30@riverdale.edu","grade":9,"mini":false,"periods":"B","team":"B","events":["Astronomy","Circuit Lab","Remote Sensing"]},{"name":"Evelyn Riggs","email":"eriggs30@riverdale.edu","grade":9,"mini":false,"periods":"B","team":"C","events":["Astronomy","Dynamic Planet","Ping-Pong Parachute"]},{"name":"August Miller","email":"amiller27@riverdale.edu","grade":12,"mini":false,"periods":"B","team":"","events":[]},{"name":"Eleanor Yapp","email":"eyapp30@riverdale.edu","grade":9,"mini":false,"periods":"AB","team":"B","events":["Dynamic Planet","Mission Possible","Wright Stuff"]},{"name":"Hayes Tobin","email":"wtobin30@riverdale.edu","grade":9,"mini":false,"periods":"AB","team":"B","events":["Circuit Lab","Remote Sensing","Thermodynamics"]},{"name":"Leila Hadley","email":"lrhadley30@riverdale.edu","grade":9,"mini":false,"periods":"B","team":"B","events":["Boomilever","Botany","Hovercraft","Ping-Pong Parachute"]},{"name":"Athena Pearson","email":"apearson30@riverdale.edu","grade":9,"mini":false,"periods":"B","team":"C","events":["Chemistry Lab","Experimental Design","Hovercraft"]},{"name":"Alara Dagalti","email":"edagalti29@riverdale.edu","grade":10,"mini":false,"periods":"B","team":"C","events":["Chemistry Lab","Protein Modeling"]},{"name":"Mayla Chen","email":"mchen30@riverdale.edu","grade":9,"mini":false,"periods":"B","team":"C","events":["Codebusters","Dynamic Planet","Hovercraft"]},{"name":"Sammie Shulman","email":"sshulman30@riverdale.edu","grade":9,"mini":false,"periods":"B","team":"B","events":["Astronomy","Rocks and Minerals"]},{"name":"Alayna Sheikh","email":"asheikh29@riverdale.edu","grade":10,"mini":false,"periods":"B","team":"B","events":["Anatomy & Physiology","Designer Genes"]},{"name":"Lily Woolf","email":"lwoolf30@riverdale.edu","grade":9,"mini":false,"periods":"B","team":"B","events":["Dynamic Planet","Mission Possible","Rocks and Minerals"]},{"name":"Meron Wiesing","email":"mwiesing30@riverdale.edu","grade":9,"mini":false,"periods":"B","team":"C","events":["Astronomy","Ping-Pong Parachute","Rocks and Minerals"]},{"name":"Brian Tran","email":"btran27@riverdale.edu","grade":12,"mini":false,"periods":"B","team":"C","events":["Experimental Design","Thermodynamics","Water Quality"]},{"name":"Sam Ziff","email":"sziff27@riverdale.edu","grade":12,"mini":false,"periods":"B","team":"C","events":["Circuit Lab","Rocks and Minerals","Thermodynamics"]},{"name":"Olivia Barr","email":"obarr29@riverdale.edu","grade":10,"mini":false,"periods":"B","team":"C","events":["Forensics","Protein Modeling"]}]};
+const SOURCE = "Assignments: events 1.csv (uploaded Oct 8) · Emails, grades, periods: Team Fit form";
+const LEADERS = [
+  {name:"Luke Orlowski", email:"lorlowski27@riverdale.edu"},
+  {name:"Rohan Varia", email:"rvaria27@riverdale.edu"},
+  {name:"Ms. Monti", email:"lmonti@riverdale.edu"}
+];
+const DEFAULT_ACCT = "fkrokermccormack27@riverdale.edu";
+const TEAMS = [["A","Team A"],["B","Team B"],["C","Team C"],["","No events yet"]];
+const PERIODS = [["mini","Mini-course"],["A","Activity A"],["B","Activity B"]];
+
+const M = DATA.members.slice().sort((a,b)=>(a.team||"Z").localeCompare(b.team||"Z")||a.name.localeCompare(b.name));
+const sel = {team:new Set(), period:new Set(), event:new Set()};
+const removed = new Set();
+const $ = id => document.getElementById(id);
+const store = {get(k){try{return localStorage.getItem(k)}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+$("src").textContent = SOURCE;
+$("acct").value = store.get("acct") || DEFAULT_ACCT;
+$("ccLeaders").checked = store.get("cc")==="1";
+
+const inPeriod = (m,p) => p==="mini" ? m.mini : m.periods.includes(p);
+function matches(m, skip){
+  if(skip!=="team" && sel.team.size && !sel.team.has(m.team)) return false;
+  if(skip!=="period" && sel.period.size && ![...sel.period].some(p=>inPeriod(m,p))) return false;
+  if(skip!=="event" && sel.event.size && !m.events.some(e=>sel.event.has(e))) return false;
+  return true;
+}
+const anySel = () => sel.team.size||sel.period.size||sel.event.size;
+
+function makeChip(container, kind, key, label, big){
+  const b = document.createElement("button");
+  b.type="button"; b.className="chip"+(big?" big":""); b.dataset.kind=kind; b.dataset.key=key;
+  b.setAttribute("aria-pressed","false");
+  b.innerHTML = `<span></span><span class="n"></span>`;
+  b.firstChild.textContent = label;
+  b.addEventListener("click",()=>{ const s=sel[kind]; s.has(key)?s.delete(key):s.add(key); render(); });
+  container.appendChild(b);
+}
+TEAMS.forEach(([k,l])=>{ if(k!=="" || M.some(m=>m.team==="")) makeChip($("teams"),"team",k,l,true); });
+PERIODS.forEach(([k,l])=>makeChip($("periods"),"period",k,l,true));
+DATA.events.slice().sort((a,b)=>a.localeCompare(b)).forEach(e=>makeChip($("events"),"event",e,e,false));
+
+$("everyone").addEventListener("click",()=>{
+  const all = TEAMS.map(t=>t[0]).filter(k=>k!==""||M.some(m=>m.team===""));
+  const on = all.every(k=>sel.team.has(k)) && !sel.period.size && !sel.event.size;
+  sel.team.clear(); sel.period.clear(); sel.event.clear();
+  if(!on) all.forEach(k=>sel.team.add(k));
+  render();
+});
+
+function recipients(){
+  if(!anySel()) return {to:[],cc:[],list:[]};
+  const acct = $("acct").value.trim().toLowerCase();
+  const list = M.filter(m=>matches(m));
+  let to = list.filter(m=>!removed.has(m.email));
+  if(!$("includeMe").checked && acct) to = to.filter(m=>m.email.toLowerCase()!==acct);
+  const toSet = new Set(to.map(m=>m.email.toLowerCase()));
+  const cc = $("ccLeaders").checked ? LEADERS.filter(l=>!toSet.has(l.email) && l.email!==acct) : [];
+  return {to, cc, list};
+}
+
+function describe(){
+  const parts=[];
+  if(sel.team.size) parts.push([...sel.team].map(k=>TEAMS.find(t=>t[0]===k)[1]).join(" or "));
+  if(sel.period.size) parts.push([...sel.period].map(k=>PERIODS.find(p=>p[0]===k)[1]).join(" or "));
+  if(sel.event.size) parts.push([...sel.event].join(" or "));
+  return parts.join("  ·  ");
+}
+
+function gmailUrl(r){
+  const acct = $("acct").value.trim();
+  const q = [];
+  if(acct) q.push("authuser="+encodeURIComponent(acct));
+  q.push("view=cm","fs=1");
+  q.push("to="+encodeURIComponent(r.to.map(m=>m.email).join(",")));
+  if(r.cc.length) q.push("cc="+encodeURIComponent(r.cc.map(m=>m.email).join(",")));
+  const su = $("subject").value.trim();
+  if(su) q.push("su="+encodeURIComponent(su));
+  return "https://mail.google.com/mail/?"+q.join("&");
+}
+
+function render(){
+  document.querySelectorAll("button.chip[data-kind]").forEach(b=>{
+    const kind=b.dataset.kind, key=b.dataset.key;
+    const on = sel[kind].has(key);
+    b.setAttribute("aria-pressed", on);
+    const n = M.filter(m=>matches(m,kind) && (kind==="team"?m.team===key : kind==="period"?inPeriod(m,key) : m.events.includes(key))).length;
+    b.querySelector(".n").textContent = n;
+    b.classList.toggle("zero", n===0 && !on);
+  });
+  const r = recipients();
+  const total = r.to.length + r.cc.length;
+  $("count").firstChild.textContent = r.to.length;
+  $("barCount").textContent = r.to.length + (r.cc.length?` +${r.cc.length} cc`:"");
+  $("summary").textContent = anySel() ? describe() : "Nothing selected yet";
+  const url = gmailUrl(r);
+  [$("go"),$("barGo")].forEach(a=>{
+    if(total && r.to.length){ a.href=url; a.setAttribute("aria-disabled","false"); }
+    else { a.href="#"; a.setAttribute("aria-disabled","true"); }
+  });
+  if(!$("subject").value && sel.event.size===1 && !sel.team.size) $("subject").placeholder = `[Sci Oly] ${[...sel.event][0]}`;
+  else $("subject").placeholder = "[Sci Oly] …";
+
+  const ul = $("people"); ul.innerHTML="";
+  if(!r.list.length){
+    const li=document.createElement("li"); li.className="empty"; li.style.display="block";
+    li.textContent = anySel() ? "Nobody matches all of these picks." : "Pick a team, period or event to see who gets the email.";
+    ul.appendChild(li);
+  }
+  const acct = $("acct").value.trim().toLowerCase();
+  r.list.forEach(m=>{
+    const li=document.createElement("li");
+    const isMe = !$("includeMe").checked && m.email.toLowerCase()===acct;
+    const off = removed.has(m.email) || isMe;
+    if(off) li.className="off";
+    li.innerHTML = `<span class="t"></span><span class="nm"><div></div><code></code></span>`;
+    li.querySelector(".t").textContent = m.team || "–";
+    li.querySelector(".nm div").textContent = m.name + (isMe?" (you)":"");
+    li.querySelector("code").textContent = m.email;
+    if(!isMe){
+      const b=document.createElement("button"); b.type="button";
+      b.textContent = removed.has(m.email) ? "Add back" : "Remove";
+      b.setAttribute("aria-label", (removed.has(m.email)?"Add back ":"Remove ")+m.name);
+      b.addEventListener("click",()=>{ removed.has(m.email)?removed.delete(m.email):removed.add(m.email); render(); });
+      li.appendChild(b);
+    } else li.appendChild(document.createElement("span"));
+    ul.appendChild(li);
+  });
+  r.cc.forEach(l=>{
+    const li=document.createElement("li"); li.className="cc";
+    li.innerHTML = `<span class="t">CC</span><span class="nm"><div></div><code></code></span><span></span>`;
+    li.querySelector(".nm div").textContent = l.name; li.querySelector("code").textContent = l.email;
+    ul.appendChild(li);
+  });
+}
+
+$("ccLeaders").addEventListener("change",()=>{store.set("cc",$("ccLeaders").checked?"1":"0");render();});
+$("includeMe").addEventListener("change",render);
+$("subject").addEventListener("input",render);
+$("acct").addEventListener("input",()=>{store.set("acct",$("acct").value.trim());render();});
+
+$("copy").addEventListener("click",()=>{
+  const r = recipients();
+  if(!r.to.length && !r.cc.length){ $("toast").textContent="Pick a group first."; return; }
+  let text = r.to.map(m=>m.email).join(", ");
+  if(r.cc.length) text += (text?", ":"") + r.cc.map(l=>l.email).join(", ");
+  const done = ()=>{ $("toast").textContent=`Copied ${r.to.length+r.cc.length} addresses.`; $("fallback").hidden=true; };
+  const fail = ()=>{ const t=$("fallback"); t.value=text; t.hidden=false; t.focus(); t.select(); $("toast").textContent="Copy was blocked here. The addresses are selected below; press Ctrl/Cmd+C."; };
+  try{ navigator.clipboard.writeText(text).then(done,fail); }catch(e){ fail(); }
+});
+
+render();
+</script>
+</body>
+</html>
